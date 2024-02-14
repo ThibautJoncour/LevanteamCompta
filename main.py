@@ -16,8 +16,8 @@ except Exception as e:
     
 # Exécutez le serveur Django en arrière-plan
 subprocess.Popen(['python', 'manage.py', 'runserver'])
-subprocess.Popen(['python', 'dashapp/dash_condition.py'])
-subprocess.Popen(['python', 'dashapp/dash_rules.py'])
+subprocess.Popen(["python", "manage.py", "collectstatic"])
+
 
 # Ouvrez la page du serveur dans le navigateur par défaut
 webbrowser.open('http://127.0.0.1:8000/')
