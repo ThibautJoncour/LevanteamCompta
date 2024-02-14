@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'blog',
     'rest_framework',
     'dashapp',
-    'django_plotly_dash',
 
 
 ]
